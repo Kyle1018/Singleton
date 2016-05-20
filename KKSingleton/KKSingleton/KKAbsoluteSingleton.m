@@ -12,6 +12,20 @@ static KKAbsoluteSingleton *sharedInstance = nil;
 
 @implementation KKAbsoluteSingleton
 
+/**
+ *  alloc和allocWithZone:只实现一个
+ */
+//+ (instancetype)alloc
+//{
+//    @synchronized(self) {
+//        if (!sharedInstance) {
+//            sharedInstance = [super alloc];
+//        }
+//        return sharedInstance;
+//    }
+//    return nil;
+//}
+
 + (instancetype)allocWithZone:(struct _NSZone *)zone
 {
     @synchronized(self) {
