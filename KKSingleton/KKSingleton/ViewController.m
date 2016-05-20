@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "KKSimpleSingleton.h"
+#import "KKNormalSingleton.h"
+#import "KKAbsoluteSingleton.h"
 
 @interface ViewController ()
 
@@ -16,7 +19,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    KKSimpleSingleton *simpleSingleton = [KKSimpleSingleton singleton];
+    KKSimpleSingleton *simpleObject = [KKSimpleSingleton new];
+    
+    NSLog(@"simpleSingleton: %@", simpleSingleton);
+    NSLog(@"simpleObject: %@", simpleObject);
+    
+    KKNormalSingleton *normalSingleton = [KKNormalSingleton singleton];
+    KKNormalSingleton *normalObject = [KKNormalSingleton new];
+    
+    NSLog(@"normalSingleton: %@", normalSingleton);
+    NSLog(@"normalObject: %@", normalObject);
+    
+    KKAbsoluteSingleton *absoluteSingleton = [KKAbsoluteSingleton singleton];
+    KKAbsoluteSingleton *absoluteObject = [KKAbsoluteSingleton new];
+    
+    NSLog(@"absoluteSingleton: %@", absoluteSingleton);
+    NSLog(@"absoluteObject: %@", absoluteObject);
 }
 
 - (void)didReceiveMemoryWarning {

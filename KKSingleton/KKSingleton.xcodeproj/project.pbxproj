@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2723F1141CEC1A23007BF01B /* KKSimpleSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2723F1131CEC1A23007BF01B /* KKSimpleSingleton.m */; };
+		2723F1171CEC1BAD007BF01B /* KKNormalSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2723F1161CEC1BAD007BF01B /* KKNormalSingleton.m */; };
+		2723F11A1CEC1C13007BF01B /* KKAbsoluteSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2723F1191CEC1C13007BF01B /* KKAbsoluteSingleton.m */; };
 		27ED9C171CEC107200657A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ED9C161CEC107200657A83 /* main.m */; };
 		27ED9C1A1CEC107200657A83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ED9C191CEC107200657A83 /* AppDelegate.m */; };
 		27ED9C1D1CEC107200657A83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27ED9C1C1CEC107200657A83 /* ViewController.m */; };
@@ -15,6 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2723F1121CEC1A23007BF01B /* KKSimpleSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSimpleSingleton.h; sourceTree = "<group>"; };
+		2723F1131CEC1A23007BF01B /* KKSimpleSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSimpleSingleton.m; sourceTree = "<group>"; };
+		2723F1151CEC1BAD007BF01B /* KKNormalSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNormalSingleton.h; sourceTree = "<group>"; };
+		2723F1161CEC1BAD007BF01B /* KKNormalSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNormalSingleton.m; sourceTree = "<group>"; };
+		2723F1181CEC1C13007BF01B /* KKAbsoluteSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKAbsoluteSingleton.h; sourceTree = "<group>"; };
+		2723F1191CEC1C13007BF01B /* KKAbsoluteSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKAbsoluteSingleton.m; sourceTree = "<group>"; };
 		27ED9C121CEC107200657A83 /* KKSingleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKSingleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27ED9C161CEC107200657A83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27ED9C181CEC107200657A83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +69,12 @@
 				27ED9C191CEC107200657A83 /* AppDelegate.m */,
 				27ED9C1B1CEC107200657A83 /* ViewController.h */,
 				27ED9C1C1CEC107200657A83 /* ViewController.m */,
+				2723F1121CEC1A23007BF01B /* KKSimpleSingleton.h */,
+				2723F1131CEC1A23007BF01B /* KKSimpleSingleton.m */,
+				2723F1151CEC1BAD007BF01B /* KKNormalSingleton.h */,
+				2723F1161CEC1BAD007BF01B /* KKNormalSingleton.m */,
+				2723F1181CEC1C13007BF01B /* KKAbsoluteSingleton.h */,
+				2723F1191CEC1C13007BF01B /* KKAbsoluteSingleton.m */,
 				27ED9C211CEC107200657A83 /* Assets.xcassets */,
 				27ED9C231CEC107200657A83 /* LaunchScreen.storyboard */,
 				27ED9C261CEC107200657A83 /* Info.plist */,
@@ -145,9 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2723F11A1CEC1C13007BF01B /* KKAbsoluteSingleton.m in Sources */,
 				27ED9C1D1CEC107200657A83 /* ViewController.m in Sources */,
+				2723F1141CEC1A23007BF01B /* KKSimpleSingleton.m in Sources */,
 				27ED9C1A1CEC107200657A83 /* AppDelegate.m in Sources */,
 				27ED9C171CEC107200657A83 /* main.m in Sources */,
+				2723F1171CEC1BAD007BF01B /* KKNormalSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +306,7 @@
 				27ED9C2B1CEC107200657A83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
